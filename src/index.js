@@ -31,10 +31,8 @@ module.exports = async function run() {
         "This action can only be invoked in `pull_request_target` or `pull_request` events. Otherwise the pull request can't be inferred."
       );
     }
-
-    console.log("TESTING: ", JSON.stringify(null, contextPullRequest, 2);
                 
-    const owner = contextPullRequest.base.user.login;
+    const owner = contextPullRequest.user.login;
     const repo = contextPullRequest.base.repo.name;
 
     // The pull request info on the context isn't up to date. When
