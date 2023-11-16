@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint src",
     "test": "jest src",
-    "build": "rm -rf dist && ncc build"
+    "build": "rimraf -rf dist && ncc build"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,8 @@
     "@actions/github": "^5.1.1",
     "conventional-changelog-conventionalcommits": "5.0.0",
     "conventional-commit-types": "^3.0.0",
-    "conventional-commits-parser": "^3.2.4"
+    "conventional-commits-parser": "^3.2.4",
+    "rimraf": "^5.0.5"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.2",
