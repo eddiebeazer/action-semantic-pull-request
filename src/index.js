@@ -32,8 +32,8 @@ module.exports = async function run() {
       );
     }
                 
-    // const owner = contextPullRequest.base.repo.owner.login;
-    const owner = "web"
+    const owner = contextPullRequest.base.repo.owner.login;
+    //const owner = "web"
     const repo = contextPullRequest.base.repo.name;
 
     // The pull request info on the context isn't up to date. When
