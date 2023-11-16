@@ -32,6 +32,8 @@ module.exports = async function run() {
       );
     }
 
+    console.log("TESTING: ", JSON.stringify(null, contextPullRequest, 2);
+                
     const owner = contextPullRequest.base.user.login;
     const repo = contextPullRequest.base.repo.name;
 
